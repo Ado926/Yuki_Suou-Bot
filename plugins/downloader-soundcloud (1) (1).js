@@ -48,8 +48,8 @@ let handler = async (m, { conn, text }) => {
     await conn.sendMessage(m.chat, {
       image: { url: video.thumbnail },
       caption: `╭─━━━━━━━━━━━━━─╮
-                │  📥 *Descargando...* ⏳  
-                ╰─━━━━━━━━━━━━━─╯
+│  📥 *Descargando...* ⏳  
+╰─━━━━━━━━━━━━━─╯
 
 📌 *Título:* _${video.title || 'Desconocido'}_
 🎤 *Canal:* _${video.author.name || 'Desconocido'}_
@@ -89,3 +89,4 @@ handler.help = ['play']
 handler.tags = ['play']
 
 export default handler;
+  
