@@ -8,19 +8,19 @@ let handler = async (m, { conn, args }) => {
     let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
     
     let txt = `
-\`\`\`Hola! Soy  *${botname}*  (∩´∀`∩)💕`\`\`
-Aquí tienes la lista de comandos.
+\`\`\`Hola! Soy  *${botname}*  (∩°∀°∩)💕\`\`\`
+Aquí tienes la lista de comandos
 ╭┈ ↷
 │❥ _Cliente_ » @${userId.split('@')[0]}
 │❀ _Modo_ » Publico
-│✰ \`Bot\` » ${(conn.user.jid == global.conn.user.jid ? '_Principal_ 🅥' : '*Sub Bot *🅑')}
+│✰ Bot » ${(conn.user.jid == global.conn.user.jid ? '_Principal_ 🅥' : '*Sub Bot *🅑')}
 │ⴵ _Activada_ » ${uptime}
 │✰ _Usuarios_ » ${totalreg}
 │✧ _Comandos_ » ${totalCommands}
 ╰─────────────────
 _Crea un *Sub-Bot* con tu número utilizando *#qr* o *#code*_
 
-❒ • :･ﾟ⊹˚• \`『 Info Bot 』\` •˚⊹:･ﾟ• ❒
+❒ • :･ﾟ⊹˚• 『 Info Bot 』•˚⊹:･ﾟ• ❒
 
 ❍ Comandos para ver estado e información de la Bot.
 ❥ *#help • #menu*
