@@ -8,7 +8,7 @@ let handler = async (m, { conn, args }) => {
     let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
     
     let txt = `
-\`\`\`Hola! Soy *${botname}* (∩°∀°∩)💕\`\`\`
+\`\`\`Hola! Soy ${botname} (∩°∀°∩)💕\`\`\`
 Aquí tienes la lista de comandos
 ╭┈ ↷
 │❥ _Cliente_ » @${userId.split('@')[0]}
@@ -17,6 +17,7 @@ Aquí tienes la lista de comandos
 │ⴵ _Activada_ » ${uptime}
 │✰ _Usuarios_ » ${totalreg}
 │✧ _Comandos_ » ${totalCommands}
+│ ❑ _Versión_ » Editada. 
 ╰─────────────────
 _Crea un *Sub-Bot* con tu número utilizando *#qr* o *#code*_
 
