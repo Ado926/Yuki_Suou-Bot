@@ -51,12 +51,12 @@ let handler = async (m, { conn, text }) => {
                 │  📥 *Descargando...* ⏳  
                 ╰─━━━━━━━━━━━━━─╯
 
-📌 *Título:* _${title || 'Desconocido'}_
-🎤 *Canal:* _${canal || 'Desconocido'}_
-👁️ *Vistas:* _${vistas || 'Desconocido'}_
-⏳ *Duración:* _${timestamp || 'Desconocido'}_
-🗓️ *Publicado hace:* _${ago || 'Desconocido'}_
-🔗 *Enlace:* ${url}
+📌 *Título:* _${video.title || 'Desconocido'}_
+🎤 *Canal:* _${video.author.name || 'Desconocido'}_
+👁️ *Vistas:* _${video.views || 'Desconocido'}_
+⏳ *Duración:* _${video.timestamp || 'Desconocido'}_
+🗓️ *Publicado hace:* _${video.ago || 'Desconocido'}_
+🔗 *Enlace:* ${video.url}
 
 ⚡ _Por favor espera mientras procesamos tu archivo..._`,
       });
