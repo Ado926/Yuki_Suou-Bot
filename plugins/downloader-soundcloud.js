@@ -47,8 +47,18 @@ let handler = async (m, { conn, text }) => {
     // Enviar información del video con miniatura
     await conn.sendMessage(m.chat, {
       image: { url: video.thumbnail },
-      caption: `🎶 *Título:* ${video.title}\n👀 *Reproducciones:* ${video.views}\n⏱️ *Duración:* ${video.timestamp}\n📝 *Creador:* ${video.author.name}`,
-      )};
+      caption:`╭─━━━━━━━━━━━━━─╮
+                │  📥 *Descargando...* ⏳  
+                ╰─━━━━━━━━━━━━━─╯
+
+📌 *Título:* _${title || 'Desconocido'}_
+🎤 *Canal:* _${canal || 'Desconocido'}_
+👁️ *Vistas:* _${vistas || 'Desconocido'}_
+⏳ *Duración:* _${timestamp || 'Desconocido'}_
+🗓️ *Publicado hace:* _${ago || 'Desconocido'}_
+🔗 *Enlace:* ${url}
+
+⚡ _Por favor espera mientras procesamos tu archivo..._`, )};
     // Enviar solo el audio
     const audioMessage = {
       audio: { url: apiData.download.url },
